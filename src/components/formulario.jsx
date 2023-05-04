@@ -57,7 +57,7 @@ export default function Formulario() {
       <div className="content">
         <div id="cadastro">
           <form method="post" action="">
-            <h1>Perfomarce Organização & Competência</h1>
+            <h1>Performance Organização & Competência</h1>
 
             <p>
               <label>Seu nome completo</label>
