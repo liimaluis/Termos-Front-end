@@ -86,7 +86,7 @@ export default function Formulario() {
             </p>
 
             <p>
-              <label>Cpf ou Cnpj</label>
+              <label>Cpf</label>
               <input
                 id="cpf_cad"
                 name="cpf"
