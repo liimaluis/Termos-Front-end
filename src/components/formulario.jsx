@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import validator from "validator";
 
 import "./formulario.css";
 
@@ -15,6 +16,11 @@ export default function Formulario() {
 
     if (!name || !email || !cpf || !telefone || !cep || !termosprivacidade) {
       alert("Preencha todos os campos corretamente.");
+      return;
+    }
+
+    if (!validator.isEmail(email)) {
+      alert("Digite um e-mail válido.");
       return;
     }
 
@@ -42,7 +48,7 @@ export default function Formulario() {
       setCpf("");
       setTelefone("");
       setCep("");
-      setTermosprivacidade(false);
+      setTermosprivacidade(true);
     } else {
       alert("Preencha todos os campos corretamente");
     }
